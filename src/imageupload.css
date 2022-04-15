@@ -1,0 +1,15 @@
+/** @format */
+
+.imageupload {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  margin: 10px auto;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  border-top: 1px solid lightgray;
+}
+.imageupload__progress {
+  width: 100%;
+}
