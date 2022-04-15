@@ -146,14 +146,14 @@ function App() {
       <div className='app__header'>
         <img className='app__headerImage' src={logoImg} alt='logo' />
         {user ? (
-          <Button onClick={() => auth.signOut()}>Logout</Button>
+          <Button onClick={() => auth.signOut()}>로그아웃하긔</Button>
         ) : (
           <div className='app__loginContainer'>
             <Button className='btn' onClick={() => setOpenSignIn(true)}>
-              Sign in
+              가입하긔
             </Button>
             <Button className='btn' onClick={() => setOpen(true)}>
-              Sign up
+              로그인하긔
             </Button>
           </div>
         )}
