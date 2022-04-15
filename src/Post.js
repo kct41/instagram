@@ -68,7 +68,7 @@ function Post({username, user, caption, imageUrl, postId}) {
           <input
             className='post__input'
             type='text'
-            placeholder='Add a comment...'
+            placeholder='내용을 쓰라긔'
             value={comment}
             onChange={(e) => setComment(e.target.value)}
           />
@@ -77,7 +77,7 @@ function Post({username, user, caption, imageUrl, postId}) {
             className='post__button'
             type='submit'
             onClick={postComment}>
-            Post
+            댓글달긔
           </button>
         </form>
       )}

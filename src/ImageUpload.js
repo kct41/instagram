@@ -63,7 +63,7 @@ function ImageUpload({username}) {
         value={caption}
       />
       <input type='file' onChange={handleChange} />
-      <Button onClick={handleUpload}>Upload</Button>
+      <Button onClick={handleUpload}>올리긔</Button>
     </div>
   );
 }
