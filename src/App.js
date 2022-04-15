@@ -38,7 +38,6 @@ function App() {
     const unsubscribe = auth.onAuthStateChanged((authUser) => {
       if (authUser) {
         //user has logged in...
-        console.log(authUser);
         setUser(authUser);
       } else {
         //user has logged out...
@@ -139,7 +138,7 @@ function App() {
               onChange={(e) => setPassword(e.target.value)}
             />
             <Button type='submit' onClick={signIn}>
-              등록
+              SUBMIT
             </Button>
           </form>
         </Box>

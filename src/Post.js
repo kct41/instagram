@@ -5,7 +5,7 @@ import {Avatar} from "@mui/material";
 import {db} from "./firebase";
 import firebase from "firebase/compat/app";
 
-function Post({username, user, caption, imageUrl, postId, timestamp}) {
+function Post({username, user, caption, imageUrl, postId}) {
   const [comments, setComments] = useState([]);
   const [comment, setComment] = useState("");
 
@@ -37,6 +37,11 @@ function Post({username, user, caption, imageUrl, postId, timestamp}) {
     };
   }, [postId]);
 
+  const [click, setClicked] = useState(0);
+
+  const onClick = (current) => {
+    setClicked((current) => current + 1);
+  };
   return (
     <div className='post'>
       <div className='post__header'>
@@ -47,16 +52,18 @@ function Post({username, user, caption, imageUrl, postId, timestamp}) {
       <img className='post__image' src={imageUrl} alt='' />
       <div className='post__menu'>
         <div className='icon__box'>
-          <i class='fa-regular fa-heart'></i>
+          <i onClick={onClick} className='fa-regular fa-heart'></i>
           <i class='fa-regular fa-comment'></i>
           <i class='fa-regular fa-paper-plane'></i>
         </div>
         <i class='fa-regular fa-bookmark'></i>
       </div>
+      <div className='post__like'>
+        좋아요가 <strong>{click}</strong>번 클릭되었습니다
+      </div>
       <h4 className='post__text'>
         <strong>{username}</strong> {caption}
       </h4>
-
       <div>
         {comments.map((comment) => (
           <p className='post__comments'>

@@ -12,6 +12,7 @@
   object-fit: contain;
   border-top: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
+  overflow: hidden;
 }
 .post__text {
   font-weight: normal;
@@ -82,4 +83,7 @@ i:hover {
 }
 .icon__box i {
   margin-right: 15px;
+}
+.post__like {
+  padding: 5px 20px;
 }
