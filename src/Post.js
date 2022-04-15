@@ -61,10 +61,11 @@ function Post({username, user, caption, imageUrl, postId, timestamp}) {
 
       {user && (
         <form className='post__commentBox'>
+          <i class='fa-regular fa-face-smile'></i>
           <input
             className='post__input'
             type='text'
-            placeholder='내용을 쓰라긔'
+            placeholder='댓글 달기...'
             value={comment}
             onChange={(e) => setComment(e.target.value)}
           />
@@ -73,7 +74,7 @@ function Post({username, user, caption, imageUrl, postId, timestamp}) {
             className='post__button'
             type='submit'
             onClick={postComment}>
-            댓글달긔
+            게시
           </button>
         </form>
       )}

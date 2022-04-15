@@ -63,7 +63,7 @@ function App() {
         )
       );
   }, []);
-
+  // 회원가입
   const signUp = (event) => {
     event.preventDefault();
     auth
@@ -77,7 +77,7 @@ function App() {
 
     setOpen(false);
   };
-
+  // 로그인
   const signIn = (event) => {
     event.preventDefault();
 
@@ -144,7 +144,7 @@ function App() {
           </form>
         </Box>
       </Modal>
-      {/* Header */}
+      {/* 헤더 */}
       <div className='app__header'>
         <img className='app__headerImage' src={logoImg} alt='logo' />
         {user ? (
@@ -170,7 +170,6 @@ function App() {
             username={post.username}
             caption={post.caption}
             imageUrl={post.imageUrl}
-            timestamp={post.timestamp}
           />
         ))}
       </div>
