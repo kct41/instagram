@@ -137,7 +137,7 @@ function App() {
               onChange={(e) => setPassword(e.target.value)}
             />
             <Button type='submit' onClick={signIn}>
-              가입하긔
+              등록하긔
             </Button>
           </form>
         </Box>
