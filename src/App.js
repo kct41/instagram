@@ -139,7 +139,7 @@ function App() {
               onChange={(e) => setPassword(e.target.value)}
             />
             <Button type='submit' onClick={signIn}>
-              등록하긔
+              등록
             </Button>
           </form>
         </Box>
@@ -148,14 +148,14 @@ function App() {
       <div className='app__header'>
         <img className='app__headerImage' src={logoImg} alt='logo' />
         {user ? (
-          <Button onClick={() => auth.signOut()}>로그아웃하긔</Button>
+          <Button onClick={() => auth.signOut()}>로그아웃</Button>
         ) : (
           <div className='app__loginContainer'>
             <Button className='btn' onClick={() => setOpenSignIn(true)}>
-              로그인하긔
+              로그인
             </Button>
             <Button className='btn' onClick={() => setOpen(true)}>
-              가입하긔
+              회원가입
             </Button>
           </div>
         )}

@@ -60,12 +60,12 @@ function ImageUpload({username}) {
       <progress className='imageupload__progress' value={progress} max='100' />
       <input
         type='text'
-        placeholder='내용을 쓰라긔'
+        placeholder='내용을 입력해주세요.'
         onChange={(event) => setCaption(event.target.value)}
         value={caption}
       />
       <input type='file' onChange={handleChange} />
-      <Button onClick={handleUpload}>올리긔</Button>
+      <Button onClick={handleUpload}>업로드</Button>
     </div>
   );
 }
