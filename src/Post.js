@@ -5,7 +5,7 @@ import {Avatar} from "@mui/material";
 import {db} from "./firebase";
 import firebase from "firebase/compat/app";
 
-function Post({username, user, caption, imageUrl, postId}) {
+function Post({username, user, caption, imageUrl, postId, timestamp}) {
   const [comments, setComments] = useState([]);
   const [comment, setComment] = useState("");
 

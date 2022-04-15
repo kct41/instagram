@@ -5,6 +5,7 @@ import {useState} from "react";
 import Button from "@mui/material/Button";
 import {storage, db} from "./firebase";
 import "./imageupload.css";
+import firebase from "firebase/compat/app";
 
 function ImageUpload({username}) {
   const [image, setImage] = useState(null);
@@ -41,6 +42,7 @@ function ImageUpload({username}) {
           .then((url) => {
             //post image inside db
             db.collection("posts").add({
+              timestamp: firebase.firestore.FieldValue.serverTimestamp(),
               caption: caption,
               imageUrl: url,
               username: username,
