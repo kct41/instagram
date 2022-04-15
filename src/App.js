@@ -10,7 +10,6 @@ import Box from "@mui/material/Box";
 import Input from "@mui/material/Input";
 import Button from "@mui/material/Button";
 import ImageUpload from "./ImageUpload";
-import firebase from "firebase/compat/app";
 
 const style = {
   position: "absolute",

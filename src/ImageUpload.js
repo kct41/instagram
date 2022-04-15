@@ -3,7 +3,6 @@
 import React from "react";
 import {useState} from "react";
 import Button from "@mui/material/Button";
-import firebase from "firebase/compat/app";
 import {storage, db} from "./firebase";
 import "./imageupload.css";
 
