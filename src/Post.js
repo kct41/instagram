@@ -45,7 +45,14 @@ function Post({username, user, caption, imageUrl, postId, timestamp}) {
       </div>
 
       <img className='post__image' src={imageUrl} alt='' />
-
+      <div className='post__menu'>
+        <div className='icon__box'>
+          <i class='fa-regular fa-heart'></i>
+          <i class='fa-regular fa-comment'></i>
+          <i class='fa-regular fa-paper-plane'></i>
+        </div>
+        <i class='fa-regular fa-bookmark'></i>
+      </div>
       <h4 className='post__text'>
         <strong>{username}</strong> {caption}
       </h4>
