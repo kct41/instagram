@@ -113,7 +113,7 @@ function App() {
               onChange={(e) => setPassword(e.target.value)}
             />
             <Button type='submit' onClick={signUp}>
-              Sign up
+              로그인하긔
             </Button>
           </form>
         </Box>
@@ -137,7 +137,7 @@ function App() {
               onChange={(e) => setPassword(e.target.value)}
             />
             <Button type='submit' onClick={signIn}>
-              Sign In
+              가입하긔
             </Button>
           </form>
         </Box>
@@ -150,10 +150,10 @@ function App() {
         ) : (
           <div className='app__loginContainer'>
             <Button className='btn' onClick={() => setOpenSignIn(true)}>
-              가입하긔
+              로그인하긔
             </Button>
             <Button className='btn' onClick={() => setOpen(true)}>
-              로그인하긔
+              가입하긔
             </Button>
           </div>
         )}
@@ -174,7 +174,7 @@ function App() {
       {user?.displayName ? (
         <ImageUpload username={user.displayName} />
       ) : (
-        <h3 className='app__loginMent'>Login to upload</h3>
+        <h3 className='app__loginMent'>댓글 달려면 로그인을 하라긔</h3>
       )}
     </div>
   );
